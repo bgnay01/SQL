@@ -1,0 +1,24 @@
+SORULAR
+ 
+Yeni kurulmakta olan bir GSM şirketinin ihtiyaçlarını karşılamak üzere yazılacak program için bir veritabanı tasarlanacaktır. Şirketin genel yapısı ve yapılacak işler şu şekilde açıklanmıştır.
+ 
+Şirket ilk olarak bölge bayilikleri kuracaktır. Bu bölge bayiliklerine bağlı olarakta alt bayilikler verilecektir. Hem bölge bayiliği hem de buna bağlı alt bayilikler için kişilerden adı ve soyadı, adres, il, telefon, faks ve firma ismi bilgileri alınacaktır. Bu adımdan sonra şirket müşterilerini kabul etmeye başlayacaktır.
+ 
+Abonelik sistemi için tarifeler belirlenmiş olup abone olmak isteyen kişiler istediği tarifeyi seçebilmektedir. Abonelerin ise; telefon numarası, adı ve soyadı, ev adresi, iş adresi, ili, nüfus cüzdan seri no, seçtiği tarife, aboneliğini yurtdışına açtırmak isteyip istemediği, aboneliğini hangi bayilikten ve hangi tarihte açtırdığı bilgileri alınmaktadır. Tarife bilgileri ise tarife adı, dakika konuşma ücreti ve SMS ücreti alanlarından oluşmaktadır.
+ 
+Ayrıca abonelerin web üzerinden işlem yapabilmeleri için kullanıcı adı, şifre bilgisi, en son giriş yaptığı tarih ve bir ayda kaç kez giriş yaptığı da tutulmaktadır.
+ 
+Bundan sonra kişilerin her ay sonunda o ay sonunda yaptıkları konuşmalara ait bilgileri içeren bir fatura düzenlenmektedir. Bu faturada kişinin o ay kaç dakika konuştuğu, kaç mesaj attığı, bu ücretlere karşılık gelen toplam borcu ve son ödeme tarihi bilgileri yer almaktadır. Hesaplamalar yapılırken kişilerin abone oldukları tarifelere göre ücretler hesaplanmaktadır. Kişiler faturalarını zamanında ödemedikleri takdirde %8 gecikme faizi uygulanmaktadır.
+ 
+Hazırlanacak olan bu veritabanına göre aşağıdaki soruları cevaplandırınız.
+ 
+1) Verilen açıklamalara göre veri tabanını, veritabanının tablolarını, tablodaki alanları, her bir alanın veri tipini, birincil ve ikincil anahtarlarını veritabanı tasarlama kurallarına göre tabloları çizerek tasarlayınız?
+2) Verilen açıklamalara göre veri tabanını, veritabanının tablolarını, tablodaki alanları, her bir alanın veri tipini, birincil ve ikincil anahtarlarını veritabanı tasarlama kurallarına göre DDL kodları kullanarak kodlayınız?
+3) Bu veritabanının varlık-ilişki modelini çiziniz? Her bir tabloda ne tür ilişkiler olduğunu gösteriniz?
+4) Toplam abone sayısı 100’ den büyük olup firma ismi 3 harfli olan ve son harfi Y ile biten bölge bayiliğine bağlı olan alt şubeleri firma isimlerine göre A-Z arasında sıralayacak şekilde listeleyen sorguyu yazınız?
+5) Veritabanında her bir bölge bayiliğine kayıtlı kaçar tane alt bölge bayisi ve her alt bölge bayiliğine bağlı kaçar tane abone olduğunu listeleyen sorguyu yazınız?
+6) Mevcut ay içerisinde en fazla süre ile konuşma yapan abonenin bilgilerini ve hangi tarifeyi kullandığı bilgilerini listeleyen sorguyu yazınız?
+7) Veritabanına bilgilerini kendiniz belirleyeceğiniz şekilde yeni bir alt bayii ekleyen sorguyu yazınız. Daha önce başka tablolara kayıt girilmesi gerekiyorsa onları da ekleyerek başlayınız?
+8) Bilgilerini kendiniz belirleyeceğiniz bir kullanıcının veritabanı üzerinde sadece kayıt listeleme yapabileceğini; ama ekleme, silme ve güncelleme yapamayacağını belirleyecek soruları yazınız?
+9) Dakikası 0.5 TL, SMS ücreti 0.05 TL olan ZOOM isimli tarifeyi kullanan müşterilerin bilgilerini ve gecikme zammı olmadan müşterilerin ne kadar fatura ödeyeceğini hesaplayacak sorguyu yazınız?
+10) Son bir ayda web üzerinden en çok giriş yapmış müşterinin bilgilerini ve hangi tarifeyi kullandığını listeleyecek sorguyu yazınız?

@@ -1,0 +1,17 @@
+S4-)select Bolge_ID,Shop_Name from Bolge_Bayilikleri x1 inner join Alt_Bayilikler x2 on x1.Bolge_ID=x2.Dealer_ID
+where Name like '%Y' and Dealer_Cust_Number>100 and LEN(Name) = 3
+
+
+S5-)select Name,count(Shop_Name) from Bolge_Bayilikleri x1 inner join Alt_Bayilikler x2 on Bolge_ID=Dealer_ID group by Name
+
+
+S6-)select top 1 Used_Minute, Cust_Name, Cust_Surname, Cust_Province from Fatura x1 inner join Aboneler x2 on x1.Cust_ID=x2.Abone_ID order by Used_Minute DESC
+
+
+S7-)Insert into Alt_Bayilikler values (5,'KAPLAN', 'Karagöz', 'Gaziantep', 'Mehmet', 'Kaplan','+905382345456', '+905382345457', 425)
+
+
+S9-)select Cust_Name, Cust_Surname, Cust_Province, Cust_Phone_Number, Cust_Home_Address, Total_Cost from Aboneler inner join Fatura on Cust_ID=Abone_ID where Cust_Tariff = 2
+
+
+S10-)select top 1 Cust_Login_In_Month, Cust_Name, Cust_Surname, Cust_Province, Tariff_Name from Online_Islemler x1 inner join Aboneler x2 on x2.Abone_ID=x1.Cust_ID inner join Tarifeler on Cust_Tariff=Tarife_ID order by Cust_Login_In_Month DESC
